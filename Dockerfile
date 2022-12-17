@@ -12,8 +12,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# RUN git clone https://github.com/RichieJJ/streamlit.git .
-COPY git clone https://github.com/RichieJJ/streamlit.git .
+RUN git clone https://github.com/RichieJJ/streamlit.git .
 
 RUN pip3 install -r requirements.txt
 
