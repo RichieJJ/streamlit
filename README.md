@@ -4,7 +4,9 @@
 
 # Install Docker Engine and Update the apt package index: 
 sudo apt-get update
+
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
 sudo apt-get update
 
 # Install Docker Engine, containerd, and Docker Compose.
