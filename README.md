@@ -27,4 +27,4 @@ $ docker run -p 8501:8501 streamlit
 
   You can now view your Streamlit app in your browser.
 
-  URL: http://<localhost-public-ip>:8501
+  URL: http://<public-ip>:8501
