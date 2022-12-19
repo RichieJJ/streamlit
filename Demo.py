@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.title('Richie's work')
+st.title('Proofpoint Demo')
 
 st.write("Data Table:")
 st.write(pd.DataFrame({
@@ -23,9 +23,3 @@ map_data = pd.DataFrame(
    columns=['lat', 'lon'])
 
 st.map(map_data)
-
-dataframe = pd.DataFrame(
-    np.random.randn(10, 20),
-    columns=('col %d' % i for i in range(20)))
-
-st.dataframe(dataframe.style.highlight_max(axis=0))         
