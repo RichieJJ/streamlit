@@ -1,5 +1,4 @@
 import streamlit as st
-
 import numpy as np
 import pandas as pd
 
@@ -11,7 +10,6 @@ st.write(pd.DataFrame({
     'second column': [10, 20, 30, 40]
 }))
 
-
 st.write("Line Chart:")
 chart_data = pd.DataFrame(
     np.random.randn(20, 3),
@@ -19,9 +17,9 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
-# st.write("Plot a map")
-# map_data = pd.DataFrame(
-#    np.random.randn(100, 2) / [100, 100] + [39.919358,-105.1064319],
-#    columns=['lat', 'lon'])
+st.write("Plot a map")
+map_data = pd.DataFrame(
+   np.random.randn(100, 2) / [100, 100] + [39.919358,-105.1064319],
+   columns=['lat', 'lon'])
 
-# st.map(map_data)
+st.map(map_data)
