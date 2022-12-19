@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.title('Proofpoint Demo')
+st.title('Richie's work')
 
 st.write("Data Table:")
 st.write(pd.DataFrame({
@@ -24,6 +24,8 @@ map_data = pd.DataFrame(
 
 st.map(map_data)
 
-import streamlit as st
-x = st.slider('x')  # 👈 this is a widget
-st.write(x, 'squared is', x * x)
+dataframe = pd.DataFrame(
+    np.random.randn(10, 20),
+    columns=('col %d' % i for i in range(20)))
+
+st.dataframe(dataframe.style.highlight_max(axis=0))         
